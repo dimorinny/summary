@@ -1,507 +1,76 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-<meta charset="utf-8">
-<title>Резюме</title>
-
-
-<style type="text/css">
-body {
-  font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  padding: 30px; }
-
-body > *:first-child {
-  margin-top: 0 !important; }
-body > *:last-child {
-  margin-bottom: 0 !important; }
-
-a {
-  color: #4183C4; }
-a.absent {
-  color: #cc0000; }
-a.anchor {
-  display: block;
-  padding-left: 30px;
-  margin-left: -30px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  cursor: text;
-  position: relative; }
-
-h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
-  text-decoration: none; }
-
-h1 tt, h1 code {
-  font-size: inherit; }
-
-h2 tt, h2 code {
-  font-size: inherit; }
-
-h3 tt, h3 code {
-  font-size: inherit; }
-
-h4 tt, h4 code {
-  font-size: inherit; }
-
-h5 tt, h5 code {
-  font-size: inherit; }
-
-h6 tt, h6 code {
-  font-size: inherit; }
-
-h1 {
-  font-size: 28px;
-  color: black; }
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #cccccc;
-  color: black; }
-
-h3 {
-  font-size: 18px; }
-
-h4 {
-  font-size: 16px; }
-
-h5 {
-  font-size: 14px; }
-
-h6 {
-  color: #777777;
-  font-size: 14px; }
-
-p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
-
-hr {
-  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
-  border: 0 none;
-  color: #cccccc;
-  height: 4px;
-  padding: 0;
-}
-
-body > h2:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-body > h1:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-  body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0; }
-
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
-  margin-top: 0; }
-
-li p.first {
-  display: inline-block; }
-li {
-  margin: 0; }
-ul, ol {
-  padding-left: 30px; }
-
-ul :first-child, ol :first-child {
-  margin-top: 0; }
-
-dl {
-  padding: 0; }
-  dl dt {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0;
-    margin: 15px 0 5px; }
-    dl dt:first-child {
-      padding: 0; }
-    dl dt > :first-child {
-      margin-top: 0; }
-    dl dt > :last-child {
-      margin-bottom: 0; }
-  dl dd {
-    margin: 0 0 15px;
-    padding: 0 15px; }
-    dl dd > :first-child {
-      margin-top: 0; }
-    dl dd > :last-child {
-      margin-bottom: 0; }
-
-blockquote {
-  border-left: 4px solid #dddddd;
-  padding: 0 15px;
-  color: #777777; }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-table {
-  padding: 0;border-collapse: collapse; }
-  table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
-
-img {
-  max-width: 100%; }
-
-span.frame {
-  display: block;
-  overflow: hidden; }
-  span.frame > span {
-    border: 1px solid #dddddd;
-    display: block;
-    float: left;
-    overflow: hidden;
-    margin: 13px 0 0;
-    padding: 7px;
-    width: auto; }
-  span.frame span img {
-    display: block;
-    float: left; }
-  span.frame span span {
-    clear: both;
-    color: #333333;
-    display: block;
-    padding: 5px 0 0; }
-span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-center > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: center; }
-  span.align-center span img {
-    margin: 0 auto;
-    text-align: center; }
-span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px 0 0;
-    text-align: right; }
-  span.align-right span img {
-    margin: 0;
-    text-align: right; }
-span.float-left {
-  display: block;
-  margin-right: 13px;
-  overflow: hidden;
-  float: left; }
-  span.float-left span {
-    margin: 13px 0 0; }
-span.float-right {
-  display: block;
-  margin-left: 13px;
-  overflow: hidden;
-  float: right; }
-  span.float-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: right; }
-
-code, tt {
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px; }
-
-pre code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent; }
-
-.highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-
-pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-  pre code, pre tt {
-    background-color: transparent;
-    border: none; }
-
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-* {
-	-webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:0 auto;
-    }
-}
-@media print {
-	table, pre {
-		page-break-inside: avoid;
-	}
-	pre {
-		word-wrap: break-word;
-	}
-}
-</style>
-
-
-</head>
-
-<body>
-
-<h2 id="toc_0">Резюме</h2>
-
-<h3 id="toc_1">Общая информация</h3>
-
-<p><strong>ФИО:</strong> Меркурьев Дмитрий Александрович
-<strong>Возраст:</strong> 22 год
-<strong>Образование:</strong> МГТУ им. Баумана 5 курс, 4 семестр Технопарка от Mail.Ru Group</p>
-
-<p><strong>Аккаунты:</strong></p>
-
+<h2 id="merkurev-dmitry-lead-android-software-engineer">Merkurev Dmitry | <em>Lead Android Software Engineer</em></h2>
 <ul>
-<li><a href="https://github.com/dimorinny">Github</a></li>
+<li><strong>Email:</strong> didika914@gmail.com</li>
+<li><strong>Github:</strong> https://github.com/dimorinny</li>
+<li><strong>Phone:</strong> +7 926 591 79 14</li>
 </ul>
-
-<hr>
-
-<h3 id="toc_2">Технологии</h3>
-
-<h4 id="toc_3">Android</h4>
-
-<p>Примеры кода:</p>
-
+<hr />
+<p>5 years of experience in a software engineering and technical projects leadership</p>
+<h3 id="employment-history">Employment history</h3>
+<h4 id="september-2019-present-lead-software-engineer-android-framework-yandex-moscow-russia">September 2019 — Present — Lead Software Engineer (Android Framework), Yandex, Moscow, Russia</h4>
+<p>Here we’re making software and hardware for infotainment systems in vehicles. Our product has been integrated into the largest carsharing service in Moscow (more than 16000 of vehicles) and available for personal customers. Furthermore, we have integration projects with the largest car manufacturers here in Russia.</p>
 <ul>
-<li><a href="https://github.com/nbsp-team/translator-plus">Полная копия гуглового переводчика</a></li>
-<li><a href="https://github.com/nbsp-team/MaterialFilePicker">Достаточно популярная библиотетка для удобного выбора файлов</a></li>
-<li><a href="https://github.com/dimorinny/android-topeka">Небольшой контребьют в гугловое приложение примеров анимаций</a></li>
-<li><a href="https://github.com/dimorinny/vscale-android">Наброски архитектуры для приложения для Vscale</a></li>
+<li>Setting up long term goals and making plans of implementation future and current projects</li>
+<li>Make crucial product level technical decisions</li>
+<li>Came up with infrastructure initiatives. I led an internal infrastructure and development experience team that successfully achieved the goal of setting up automation processes of building firmware and release chains for our crucial projects. As a result, we provided automation tools that our QA team is still using for building and releasing firmware instead of manual processes</li>
+<li>Participate in inter companies level meetings with vehicle and hardware manufacturers for future integrations and current projects</li>
+<li>Make changes in AOSP for vehicle purposes (custom window manager, HAL implementation, permissions system)</li>
 </ul>
-
-<blockquote>
-<p>Так же есть проект над которым работаю в данный момент, в нем использую все указанные ниже технологии. (При вашей заинтересованности готов предоставить исходный код).</p>
-</blockquote>
-
-<p>Пол года разрабатывал Android приложение Интранет@Mail.ru (внутренее приложение для Mail.Ru)</p>
-
-<p><strong>Из технологий:</strong> Активно испоьзую RxJava/RxKotlin, Retrofit, StorIO/Realm, внедряю зависимости с помощью Dagger2. В качестве языка программирования в последних проектах использую - Kotlin.</p>
-
-<p>Для дебага Android приложений использую: Stetho, LeakCanary.</p>
-
-<p>Стараюсь следовать Clean Architecture/Mpv, что в связке с Dagger2 позволяет писать тестируемый код.</p>
-
-<p>UI делаю в соответствии с гайдлайнами Material Design.</p>
-
-<hr>
-
-<h4 id="toc_4">Общее</h4>
-
-<p>Системы контроля версий:</p>
-
+<p><strong>Technical stack:</strong> Android, AOSP, Repo, Java, Kotlin, C++, Ansible, Docker, Bash, SELinux</p>
+<h4 id="may-2018-september-2019-senior-software-engineer-infrastructure-avito-moscow-russia">May 2018 — September 2019 — Senior Software Engineer (Infrastructure), Avito, Moscow, Russia</h4>
+<h4 id="june-2017-may-2018-software-engineer-infrastructure-avito-moscow-russia">June 2017 — May 2018 — Software Engineer (Infrastructure), Avito, Moscow, Russia</h4>
+<p>Our infrastructure team has been responsible for providing the best experience for our product teams. Also, we were the main participants of company level OCR of eliminating manual testing processes and speed up release cycles by providing automatization tooling.</p>
 <ul>
-<li>Git</li>
+<li>Tight communication with different company units. Most commonly I have a shared area with product, hardware, QA, network teams</li>
+<li>Make and support CI pipelines</li>
+<li>Were fully responsible for tests running infrastructure</li>
+<li>Providing tooling for QA team (development and maintenance of the company’s shared library for UI Android testing by Google Espresso)</li>
+<li>Make and support performance measurement instruments for mobile applications</li>
+<li>Developing Bitbucket plugins for company needs</li>
 </ul>
-
-<p><strong>Базы данных:</strong></p>
-
+<p>As a result, we have grown from zero to thousands of integration tests and improved time-to-market from several months to per-week releases. Our team organized internal meetups with infrastructure teams from other Russian companies where I was happy to share our approaches and experience in this area. Finally, we open-sourced all products we developed with the documentation for transparency and tech PR purposes: https://github.com/avito-tech/avito-android</p>
+<p><strong>Technical stack:</strong> Android, Kotlin, Java, Python, Gradle, Docker, Kubernetes, Bash</p>
+<h4 id="july-2016-june-2017-android-engineer-avito-moscow-russia">July 2016 — June 2017 — Android Engineer, Avito, Moscow, Russia</h4>
+<p>Developing an Android application. Used Kotlin programming language and reactive approach for building all application layers implemented.</p>
 <ul>
-<li>MYSQL</li>
-<li>Memcached</li>
-<li>MongoDB</li>
-<li>Redis</li>
-<li>BoltDB</li>
+<li>Participate in developing application architecture</li>
+<li>Automation and developer experience tools</li>
+<li>Tight communication with design and backend teams</li>
+<li>Developing and maintaining shared application components</li>
 </ul>
-
-<p><strong>Очереди сообщений:</strong></p>
-
+<p><strong>Technical stack:</strong> Android, Kotlin, RxJava, Docker, Bash</p>
+<h4 id="january-may-2015-android-engineer-mail.ru-group-moscow">January — May 2015 — Android Engineer, Mail.Ru Group, Moscow</h4>
+<p>Developing an Android application that allows effective employees’ communication, planning of duties and tasks, approving or rejecting company cost items. Also, it provides information about employees, their devices, etc.</p>
 <ul>
-<li>RabbitMQ</li>
-<li>NATS</li>
+<li>Implementation of the system to store client certificates</li>
+<li>Customization of application for large amounts of data</li>
+<li>Providing safe storage of valuable data for the company</li>
 </ul>
-
-<p>Алгоритмы и структуры данных.</p>
-
-<p><strong>Методологии разработки:</strong></p>
-
+<p><strong>Technical stack:</strong> Android, Java, RxJava</p>
+<hr />
+<h3 id="skills">Skills</h3>
 <ul>
-<li>Agile
-
+<li>Advanced knowledge of Android SDK</li>
+<li>Deep understanding of Android Open Source Project and adjacent tooling</li>
+<li>Thorough understanding of concurrency and multi-threading programming</li>
+<li>Good understanding of design patterns</li>
+<li>Programming languages:
 <ul>
-<li>Kanban</li>
-<li>Scrum</li>
+<li>Java</li>
+<li>Kotlin</li>
+<li>Python</li>
+<li>Golang</li>
 </ul></li>
 </ul>
-
-<hr>
-
-<h4 id="toc_5">Python</h4>
-
-<p>В рамках 1 семестра Технопарк написан аналог сайта Stackoverflow c использованием Django.</p>
-
-<p>Так же использовал в тестовых проектах DjangoRestFramework.</p>
-
-<p>Смотрел в сторону Flask, Tornado (писал API для форума в рамках курса БД в Технопарке), Gevent. Использовал Sqlalchemy, Jinja.</p>
-
-<p>Проявляю интерес к asyncio (async/await в Python 3.5).</p>
-
-<p>Писал <a href="https://github.com/dimorinny/ufed-modules">модули</a> к криминалистическому комплексу UFED для выгрузки данных из приложений Яндекса для Android на IronPython.</p>
-
-<hr>
-
-<h4 id="toc_6">Golang</h4>
-
-<p><strong>Примеры кода:</strong></p>
-
+<hr />
+<h3 id="public-activities">Public activities</h3>
 <ul>
-<li><a href="https://github.com/dimorinny/dimginx">Веб сервер для отдачи статики</a></li>
-<li><a href="https://github.com/dimorinny/gopermission">Небольшой модуль для http permissions</a></li>
-<li><a href="https://github.com/dimorinny/echo-jwt">Модуль для авторизации по JWT для echo фреймворка</a></li>
-<li><a href="https://github.com/dimorinny/queuer">Небольшой REST (почти) API для заброшенного сервиса очередей.</a></li>
-<li><a href="https://github.com/dimorinny/watchtower">Форк инструмента для автоматического обновления Docker контейнеров из Docker Registry.</a></li>
+<li>Android CI: Impact Analysis (Russian) (<a href="https://youtu.be/EBO2S9qcp0s?t=6946">link</a>)</li>
 </ul>
-
-<p>Так же реализовывал систему автоматической сборки Android приложения через веб хуки, но исходники безвозвратно потерянны.</p>
-
-<hr>
-
-<h4 id="toc_7">С/С++</h4>
-
-<p>В рамках лабороторных работ в Университете и в Технопарке реализовывал различные алгоритмы и структуры данных.</p>
-
-<p>В рамках Технопарка реализовывал игру-шутер на C++ с использованием Qt. Так же есть <a href="https://habrahabr.ru/post/245245/">провалившаяся статья</a> c на Хабре.</p>
-
-<p>Очень давно (более 3 лет назад) писал программу передачи файлов на Qt.</p>
-
-<hr>
-
-<h4 id="toc_8">DevOps</h4>
-
-<p><strong>Активно использую стек технологий от Docker:</strong></p>
-
+<blockquote>
+<p>https://youtu.be/EBO2S9qcp0s?t=6946</p>
+</blockquote>
 <ul>
-<li>Docker-machine</li>
-<li>Docker-compose</li>
-<li>Docker-network</li>
-<li>Docker-swarm</li>
-<li>Docker-registry</li>
+<li>Automation testing for mobile applications public discussion for Podlodka Podcast (Russian)</li>
 </ul>
-
-<p>Для дискаверинга использую <strong>Consul</strong>. Чаще всего в связке с <strong>Docker Swarm</strong>, <strong>Registrator</strong> и <strong>Consul template</strong> для автобалансинга.</p>
-
-<p>Для автоматизации - <strong>Ansible</strong>.</p>
-
-<hr>
-
-<h4 id="toc_9">Frontend</h4>
-
-<p><strong>Примеры кода:</strong></p>
-
-<ul>
-<li><a href="https://github.com/nbsp-team/kurve">Браузерная игра Achtung die Kurve</a></li>
-<li><a href="https://github.com/dimorinny/react-redux-starter">Шаблон для начала новых проектов с использованием технологий React.js, Redux, Webpack</a></li>
-</ul>
-
-<p><strong>Из технологий использовал:</strong></p>
-
-<ul>
-<li>Backbone</li>
-<li>Angular2</li>
-<li>React</li>
-<li>Underscore/Lodash</li>
-<li>jQuery</li>
-<li>Ajax</li>
-<li>Handlebars</li>
-<li>Fest</li>
-</ul>
-
-<p>Активно использую ES6/ES7 фишки. Все это дело проганяю через Babel.</p>
-
-<p><strong>Собираю проекты:</strong></p>
-
-<ul>
-<li>RequireJS (CommonJS / AMD)</li>
-<li>Grunt</li>
-<li>Gulp</li>
-<li>Webpack</li>
-</ul>
-
-<hr>
-
-<h4 id="toc_10">Опыт работы:</h4>
-
-<ul>
-<li>Выполнял заказ Android приложение Интранет@Mail.ru.</li>
-<li>Выполнял заказы на фриланс биржах. (<a href="https://play.google.com/store/apps/details?id=ru.ridewithme">WithMe</a>)</li>
-</ul>
-
-<hr>
-
-
-
-
-</body>
-
-</html>
+<hr />
